@@ -49,19 +49,21 @@ GET /
 ####参数 
 
 
-| Name | Type | Description |
-| ----| ---- | ---- |
-| types | int | 0: 高匿代理, 1 透明 |
-| protocol | int | 0: http, 1 https |
-| count | int | 数量 |
-| country | str | 国家 |
-| area | str | 国家 |
+| 参数名 | 类型 | 描述 | 是否必填 |
+| ----| ---- | ---- | ---- |
+| types | int | 0: 高匿代理, 1 透明  | 是 |
+| protocol | int | 0: http, 1 https | 否 |
+| count | int | 数量 | 是 |
+| country | str | 国家 | 否 |
+| area | str | 国家 |否|
 
 
 
 #### 例子
 
-
+```
+GET /?types=0&count=10 # 获取10个代理
+```
 
 <br/>
 -----------------------------2016-10-27----------------------------

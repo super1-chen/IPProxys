@@ -47,7 +47,7 @@ class ProxySpider(object):
                 proxys_tmp=None
                 #这个时候开始去重:
                 proxys = [dict(t) for t in set([tuple(proxy.items()) for proxy in proxys])]
-                logger.info('end_proxy: %s'%len(proxys))
+                logger.info('end_proxy: %s'%str(len(proxys)))
                 logger.info('spider proxys: %s'%type(proxys))
                 proxys = validator.run_list(proxys)#这个是检测后的ip地址
 
